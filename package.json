@@ -1,0 +1,27 @@
+{
+  "name": "neuroturn-servidor",
+  "version": "2.1.0",
+  "description": "NeuroTurn — Sistema de Gestión de Turnos Médicos · Neurocoop Healthcare",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev":   "node --watch server.js"
+  },
+  "dependencies": {
+    "mssql":         "^10.0.4",
+    "msnodesqlv8":   "^4.3.1",
+    "bcryptjs":      "^2.4.3",
+    "jsonwebtoken":  "^9.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Neurocoop Healthcare",
+  "license": "UNLICENSED",
+  "_comentarios": {
+    "mssql":        "Cliente SQL Server — funciona con tedious (driver JS puro)",
+    "msnodesqlv8":  "Driver nativo Windows — necesario para LocalDB (\\PANACEA-DIDACTI)",
+    "bcryptjs":     "Hash seguro de contraseñas (bcrypt, factor 12)",
+    "jsonwebtoken": "Tokens JWT para sesiones (expiran en 10h)"
+  }
+}
